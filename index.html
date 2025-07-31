@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <!-- Project card
+    Project card
 
     <section id="projects" class="projects-section">
         <h2 class="section-title">My Projects</h2>
@@ -170,7 +170,8 @@
                 <div class="project-info">
                     <h3>Student Dropout Prediction</h3>
                     <p>Python, Streamlit, scikit-learn, pandas</p>
-                    <a href="https://github.com/dhanesh-pipaliya/student-dropout-prediction.git" target="_blank">View Project</a>
+                    <a href="https://github.com/dhanesh-pipaliya/student-dropout-prediction.git" target="_blank">View
+                        Project</a>
                 </div>
             </div>
 
@@ -192,13 +193,12 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- contact -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-
             <form class="contact-form" onsubmit="handleFormSubmit(event)">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Your Name" required />
@@ -211,7 +211,7 @@
                 </div>
                 <div class="button-group">
                     <button type="button" class="btn primary" onclick="sendWhatsApp()">Send Message</button>
-                    <button type="submit" class="btn outline">Send Email</button>
+                    <!-- <button type="submit" class="btn outline">Send Email</button> -->
                 </div>
             </form>
         </div>
@@ -259,26 +259,26 @@
             window.open(link, "_blank");
         }
 
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
+        // function handleFormSubmit(event) {
+        //     event.preventDefault();
+        //     const form = event.target;
 
-            // Replace this with your FormSubmit endpoint
-            const formAction = "https://formsubmit.co/pipaliyadhanesh2005@gmail.com";
+        //     // Replace this with your FormSubmit endpoint
+        //     const formAction = "https://formsubmit.co/pipaliyadhanesh2005@gmail.com";
 
-            const formData = new FormData(form);
-            fetch(formAction, {
-                method: "POST",
-                body: formData,
-            })
-                .then(() => {
-                    alert("Email sent successfully!");
-                    form.reset();
-                })
-                .catch(() => {
-                    alert("Failed to send email.");
-                });
-        }
+        //     const formData = new FormData(form);
+        //     fetch(formAction, {
+        //         method: "POST",
+        //         body: formData,
+        //     })
+        //         .then(() => {
+        //             alert("Email sent successfully!");
+        //             form.reset();
+        //         })
+        //         .catch(() => {
+        //             alert("Failed to send email.");
+        //         });
+        // }
     </script>
 </body>
 
